@@ -1,0 +1,3 @@
+MAILTO=devops@my_company.com
+*/5 * * * * phone_ctlr [ ! -x $INST_DIR/Phone_agent.py ] && chmod 744 $INST_DIR/Phone_agent.py; \
+                       $INST_DIR/Phone_agent.py $INST_DIR/Phone_agent.conf now now > $INST_DIR/Phone_Agent.log 2>&1
